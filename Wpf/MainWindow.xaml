@@ -1,0 +1,282 @@
+﻿<Window x:Class="Wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="700" Width="500">
+    <Border Padding="10">
+        
+        <StackPanel>
+        
+        <!--Buttons Top-->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+            
+                <Button x:Name="SaveButton" Click="SaveButton_Click"  Margin ="0 0 10 0" Grid.Column="0"  Content="Save" />
+                <Button x:Name="ResetButton" Click="ResetButton_Click"  Grid.Column="1"  Content="Reset" />
+                <Button Margin ="10 0 0 0" Grid.Column="2" Content="Send" />
+            </Grid>
+
+        <!--TextBlock Position and Salary-->
+            <Grid Margin="0 10 0 0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Grid.Column="0" Text="Position Applied" />
+                <TextBlock Grid.Column="1" Text="Salary Expected"  />
+            </Grid>
+
+        <!--TextBox Position and Salary-->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                
+                <TextBox x:Name="Position" Grid.Column="0" Margin="0 0 10 0"/>
+                <TextBox x:Name="Salary"  Grid.Column="1" />
+            </Grid>
+
+            <TextBlock Text="Personal Particulars" FontWeight="Bold" Margin="0 10" Background="Azure"/>
+
+        <!--Name Age NRIC -->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Grid.Column="0" Text="Name" />
+                <TextBlock Grid.Column="1" Text="Age"  />
+                <TextBlock Margin="10 0 0 0" Grid.Column="2" Text="NRIC" />
+            </Grid>
+
+        <!-- TextBox for Name, Age, NRIC-->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBox Padding ="2" Margin ="0 0 10 0" Grid.Column="0" x:Name="Name"/>
+                <TextBox Grid.Column="1" x:Name="Age"/>
+                <TextBox Margin ="10 0 0 0" Grid.Column="2" x:Name="NRIC"/>
+            </Grid>
+
+        <!-- Address and Email-->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Margin="0 10 0 0" Grid.Column="0" Text="Address" />
+                <TextBlock Margin ="0 10 0 0" Grid.Column="1" Text="Email" />
+                
+            </Grid>
+
+        <!--TextBox of Address and Email-->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                
+                <TextBox Padding="2" Margin="0 0 10 0" Grid.Column="0" x:Name="Address"/>
+                <TextBox Grid.Column="1" x:Name="Email"/>
+            </Grid>
+
+            <TextBlock Text="Education" FontWeight="Bold" Margin="0 10 0 0" Background="Azure"/>
+        
+        <!-- TextBlock Institution, Year Start, Year End, Qualification-->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Grid.Column="0" Text="Institution" />
+                <TextBlock Grid.Column="1" Text="Start"  />
+                <TextBlock Grid.Column="2" Text="End" />
+                <TextBlock Grid.Column="3" Text="Qualification" />
+                
+            </Grid>
+
+        <!-- Textbox Table of Education-->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBox Grid.Column="0" x:Name="Instution1"/>
+                <TextBox Grid.Column="1" x:Name="Start1"/>
+                <TextBox Grid.Column="2" x:Name="End1"/>
+                <TextBox Grid.Column="3" x:Name="Qualification1"/>
+            </Grid>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+
+                <TextBox Grid.Column="0" x:Name="Instution2"/>
+                <TextBox Grid.Column="1" x:Name="Start2"/>
+                <TextBox Grid.Column="2" x:Name="End2"/>
+                <TextBox Grid.Column="3" x:Name="Qualification2"/>
+            </Grid>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+
+                <TextBox Grid.Column="0" x:Name="Instution3"/>
+                <TextBox Grid.Column="1" x:Name="Start3"/>
+                <TextBox Grid.Column="2" x:Name="End3"/>
+                <TextBox Grid.Column="3" x:Name="Qualification3"/>
+            </Grid>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+
+                <TextBox Grid.Column="0" x:Name="Instution4"/>
+                <TextBox Grid.Column="1" x:Name="Start4"/>
+                <TextBox Grid.Column="2" x:Name="End4"/>
+                <TextBox Grid.Column="3" x:Name="Qualification4"/>
+            </Grid>
+
+            <TextBlock Text="Employment History" FontWeight="Bold" Margin="0 10 0 0 " Background="Azure"/>
+
+        <!--TextBlock and TextBox of Employment History-->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                
+                <StackPanel Grid.Column="0">
+                    <TextBlock Text="Employer"/>
+                    <TextBlock Text="Address" Margin="0 20"/>
+                    <TextBlock Text="Telephone"/>
+                    <TextBlock Text="Supervisor Name"/>
+                    <TextBlock Text="Emplyment Duration"/>
+                    <TextBlock Text="Position"/>
+                    <TextBlock Text="References"/>
+                </StackPanel>
+
+                <StackPanel Grid.Column="1">
+                    <TextBox x:Name="Employer1" />
+                    <TextBox Padding="0 15" x:Name="Address1"/>
+                    <TextBox x:Name="Telephone1"/>
+                    <TextBox x:Name="SupName1"/>
+                    <TextBox x:Name="Duration1"/>
+                    <TextBox x:Name="Position1"/>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <CheckBox Grid.Column="0" Content="Yes" x:Name="ReferenceYes1"/>
+                        <CheckBox Grid.Column="1"  Content="No" x:Name="ReferenceNo1"/>
+                    </Grid>
+                </StackPanel>
+
+                <StackPanel Grid.Column="2">
+                    <TextBox x:Name="Employer2" />
+                    <TextBox Padding="0 15" x:Name="Address2"/>
+                    <TextBox x:Name="Telephone2"/>
+                    <TextBox x:Name="SupName2"/>
+                    <TextBox x:Name="Duration2"/>
+                    <TextBox x:Name="Position2"/>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <CheckBox Grid.Column="0" Content="Yes" x:Name="ReferenceYes2"/>
+                        <CheckBox Grid.Column="1"  Content="No" x:Name="ReferenceNo2"/>
+                    </Grid>
+                </StackPanel>
+            </Grid>
+
+            <TextBlock Text="Personal References" FontWeight="Bold" Background="Azure" Margin="0 10 0 0"/>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Grid.Column="0">
+                    <TextBlock Text="Name"/>
+                    <TextBlock Text="Position" Margin="0 2 0 0"/>
+                    <TextBlock Text="Company/Institution"  Margin="0 2 0 0"/>
+                    <TextBlock Text="Contact"  Margin="0 2 0 0" />
+                </StackPanel>
+
+                <StackPanel Grid.Column="1">
+                    <TextBox x:Name="Name3"/>
+                    <TextBox x:Name="Position3"/>
+                    <TextBox x:Name="Company3"/>
+                    <TextBox x:Name="Contact3"/>
+                </StackPanel>
+
+                <StackPanel Grid.Column="2">
+                    <TextBox x:Name="Name4"/>
+                    <TextBox x:Name="Position4"/>
+                    <TextBox x:Name="Company4"/>
+                    <TextBox x:Name="Contact4"/>
+                </StackPanel>
+            </Grid>
+
+        <!--Declaration, Signature, etc-->
+            <Grid Margin="0 10 0 0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                
+                <TextBlock TextWrapping="Wrap" Grid.Column="0">
+                    I declare that all the information is provided is true
+                </TextBlock>
+                <TextBox Text="Signature" Grid.Column="1"/>
+                <TextBox Text="Date" Grid.Column="2"/>
+
+            </Grid>
+        </StackPanel>
+    </Border>
+</Window>
